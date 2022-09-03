@@ -6,6 +6,8 @@ Group:         Unspecified
 Summary:       Select needed OpenCL implementation with cl_pro prefix
 
 
+Source0:        %{name}-%{version}-%{release}.x86_64.tar.gz
+
 URL:           https://github.com/CosmicFusion/amdgpu-opencl-switcher
 
 
@@ -13,12 +15,12 @@ URL:           https://github.com/CosmicFusion/amdgpu-opencl-switcher
 
 
 
-Provides:      amdgpu-opencl-switcher = 1.1-0.fc36
-Provides:      amdgpu-opencl-switcher(x86-64) = 1.1-0.fc36
+Provides:      amdgpu-opencl-switcher = %{version}-%{release}
+Provides:      amdgpu-opencl-switcher(x86-64) = %{version}-%{release}
 Requires:      /usr/bin/bash
 
 %install
-tar -xf amdgpu-opencl-switcher-1.0-0.f36.x86_64.tar.gz
+tar -xf %{SOURCE0}
 mv usr %{buildroot}/
 
 %description
