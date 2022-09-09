@@ -6,7 +6,7 @@
 
 
 cl_pro() {
-    export LD_LIBRARY_PATH="/opt/amdgpu/libdrm/lib64:/opt/amdgpu/libdrm/lib32:/opt/amdgpu-pro/OpenCL/lib64:/opt/amdgpu-pro/OpenCL/lib32:${LD_LIBRARY_PATH}"
+    export LD_LIBRARY_PATH="/opt/amdgpu/libdrm/lib64:/opt/amdgpu/libdrm/lib:/opt/amdgpu-pro/opencl/lib64:/opt/amdgpu-pro/opencl/lib:${LD_LIBRARY_PATH}"
 }
 
 if [[ $(basename $0) == cl_pro ]]; then

@@ -1,5 +1,5 @@
 Name:          amdgpu-opencl-switcher
-Version:       1.0
+Version:       1.1
 Release:       0%{?dist}
 License:       GPL
 Group:         Unspecified
